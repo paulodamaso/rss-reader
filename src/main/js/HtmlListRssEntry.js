@@ -1,11 +1,5 @@
-class HtmlListRssEntry extends RssEntry{
-
-    constructor(rssentry) {
-        super();
-        this.rssentry = rssentry;
-    }
-
-    print(){
-        return "<a href='"+this.rssentry.url()+"'>" + this.rssentry.name() + "<\a>";
-    }
+function HtmlListRssEntry(name, url) {
+    this.name =  name;
+    this.url = url;
+    this.print = function() {return "<a href='"+this.url+"'>" + this.name + "</\a>";}
 }
