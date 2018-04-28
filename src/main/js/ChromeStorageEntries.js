@@ -1,7 +1,7 @@
 /**
  A collection of RssEntry read from chrome.storage.sync
  */
-class ChromeStorageEntries {
+class ChromeStorageEntries extends Entries{
 
     /**
      * Adds an entry to chrome.storage.sync

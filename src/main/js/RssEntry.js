@@ -1,15 +1,9 @@
-class RssEntry{
-
-    constructor(name, url) {
-        this.name = name;
-        this.url = url;
-    }
-
-    name(){
-        return this.name;
-    }
-
-    url(){
-        return this.url;
-    }
+/**
+ * A simple RSS feeder entry.
+ */
+function RssEntry(name, url) {
+    this.name =  name;
+    this.url = url;
+    this.print = function() {return name + " - " + url;}
 }
+

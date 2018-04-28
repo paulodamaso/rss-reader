@@ -1,6 +1,7 @@
-class HtmlListRssEntry {
+class HtmlListRssEntry extends RssEntry{
 
     constructor(rssentry) {
+        super();
         this.rssentry = rssentry;
     }
 
